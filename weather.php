@@ -4,7 +4,7 @@ function havadurumu($url,$il,$kacgun = 1){
 
     $il = mb_strtolower($il);
 
-    $veri = file_get_contents($url.'/'.$il);
+    $veri = file_get_contents("http://www.mynet.com/havadurumu/asya/turkiye/".$il);
     preg_match_all('#<span class="hvDeg1">(.*?)</span>#',$veri,$enYuksek);
     preg_match_all('#<span class="hvDeg2">(.*?)</span>#',$veri,$enDusuk);
     preg_match_all('#<span class="hvMood">(.*?)</span>#',$veri,$hvMood);
@@ -42,6 +42,6 @@ function havadurumu($url,$il,$kacgun = 1){
 
 }
 
-$havaDurumu = havadurumu("http://www.mynet.com/havadurumu/asya/turkiye","Bursa",3);
+$havaDurumu = havadurumu("Bursa",3);
 
 echo json_encode($havaDurumu);
