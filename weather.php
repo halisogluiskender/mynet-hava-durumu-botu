@@ -1,6 +1,6 @@
 <?php
 
-function havadurumu($url,$il,$kacgun = 1){
+function havadurumu($il,$kacgun = 1){
 
     $il = mb_strtolower($il);
 
