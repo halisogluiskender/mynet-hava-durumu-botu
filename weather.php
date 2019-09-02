@@ -33,7 +33,7 @@ function havadurumu($il,$kacgun = 1){
             "durum" => $hvM,
             "gun" => $hvG,
             "icon" => $icn,
-			"icon_url" => "http://img3.mynet.com/havadurumu/durumlar/",
+            "icon_url" => "http://img3.mynet.com/havadurumu/durumlar/",
             "iconAlt" => $icnAlt
         );
         
@@ -44,7 +44,7 @@ function havadurumu($il,$kacgun = 1){
             "durum" => $hvMood[1][0],
             "gun" => $hvGun[1][0],
             "icon" => $icon[1][0],
-			"icon_url" => "http://img3.mynet.com/havadurumu/durumlar/",
+            "icon_url" => "http://img3.mynet.com/havadurumu/durumlar/",
             "iconAlt" => $icon[2][0]
         );
     }
